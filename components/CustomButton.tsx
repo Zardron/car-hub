@@ -3,7 +3,7 @@
 import { CustomButtonProps } from "@/types";
 
 const CustomButton = ({
-  type,
+  btnType,
   containerStyles,
   title,
   handleClick,
@@ -11,7 +11,7 @@ const CustomButton = ({
   return (
     <button
       disabled={false}
-      type={type}
+      type={btnType || "button"}
       className={`custom-btn ${containerStyles}`}
       onClick={handleClick}
     >
